@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202085D721FFF96900DB44FB /* ports.c in Sources */ = {isa = PBXBuildFile; fileRef = 202085D621FFF96900DB44FB /* ports.c */; };
 		20A92DC221EEF10800AF768A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 20A92DC121EEF10800AF768A /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		202085D521FFF96900DB44FB /* ports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ports.h; sourceTree = "<group>"; };
+		202085D621FFF96900DB44FB /* ports.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ports.c; sourceTree = "<group>"; };
 		20A92DBE21EEF10800AF768A /* portable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = portable; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A92DC121EEF10800AF768A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				20A92DC121EEF10800AF768A /* main.c */,
+				202085D521FFF96900DB44FB /* ports.h */,
+				202085D621FFF96900DB44FB /* ports.c */,
 			);
 			path = portable;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202085D721FFF96900DB44FB /* ports.c in Sources */,
 				20A92DC221EEF10800AF768A /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +238,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
