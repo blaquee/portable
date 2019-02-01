@@ -15,8 +15,9 @@
 #include <sys/kernel_types.h>
 #include <mach/mach.h>
 #include <servers/bootstrap.h>
+#include <mach/task_special_ports.h>
 
+extern bootstrap_t g_bootstrap;
 
-mach_port_t g_bootstrap = MACH_PORT_NULL;
-
+bool initialize_bootstrap(void);
 #endif /* ports_h */
